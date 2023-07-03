@@ -12,11 +12,6 @@ class ApplicationController
     protected DateService $dateService;
     protected TelegramService $telegramService;
 
-    /**
-     * @param DateService $dateService
-     * @param TelegramService $telegramService
-     * @param MessagesValueObject $messagesValueObject
-     */
     public function __construct(
         DateService $dateService,
         TelegramService $telegramService,
@@ -28,9 +23,6 @@ class ApplicationController
         $this->messagesValueObject = $messagesValueObject;
     }
 
-    /**
-     * @return void
-     */
     public function start(): void
     {
         if ($this->dateService->isLastDayOfMonth()) {
