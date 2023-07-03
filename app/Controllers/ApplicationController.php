@@ -33,9 +33,6 @@ class ApplicationController
      */
     public function start(): void
     {
-        $this->telegramService->sendMessage($this->messagesValueObject->getFridayLastDayMessage());
-
-        return;
         if ($this->dateService->isLastDayOfMonth()) {
             if ($this->dateService->isFriday()) {
                 $this->telegramService->sendMessage($this->messagesValueObject->getFridayLastDayMessage());

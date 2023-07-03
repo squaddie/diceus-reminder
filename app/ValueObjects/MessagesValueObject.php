@@ -11,7 +11,8 @@ class MessagesValueObject
 
     public function getFridayLastDayMessage(): string
     {
-        return 'Hello everyone, today is Friday, the last day of the week and month, log the time please! ' . env('SERVICE_URL');
+        return 'Hello everyone, today is Friday, the last day of the week and month, log the time please! '
+            . env('SERVICE_URL');
     }
 
     public function getLastDayMessage(): string

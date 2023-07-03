@@ -19,7 +19,6 @@ class DateService
     {
         $timezone = new DateTimeZone(self::TIMEZONE);
         $this->dateTimeInstance = new DateTime();
-//        $this->dateTimeInstance->setDate(2023, 4, 31); //todo for testing purpose
         $this->dateTimeInstance->setTimezone($timezone);
     }
 
