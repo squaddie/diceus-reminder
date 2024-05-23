@@ -1,0 +1,2 @@
+20 11 * * 1-5 /usr/local/bin/php /var/www/html/index.php >> /var/www/html/log.txt 2>&1
+0 15 * * 1-5 /usr/local/bin/php /var/www/html/index.php >> /var/www/html/log.txt 2>&1
