@@ -10,6 +10,7 @@ COPY . /var/www/html
 # Install required packages
 RUN apt-get update && apt-get -y install cron \
     && apt-get -y install git \
+    && apt-get -y install nano \
     && apt-get clean
 
 # Install Composer
